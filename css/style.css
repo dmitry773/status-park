@@ -1,7 +1,9 @@
-.container-fluid
+.body
 {
-    overflow: hidden;
+    overflow-x: hidden;
+    justify-content: center;
 }
+
 .border-radius
 {
   border-radius: clamp(1%, 11vw, 5%);
@@ -68,6 +70,10 @@ a
   width:32vw;
   height: 15vw;
 }
+.htext
+{
+  font-size: clamp(2vw, 2vw, 3vw);
+}
 .quorte-2
 {
   margin: clamp(1vw, 1.2vw, 2vw);
@@ -83,6 +89,7 @@ a
   border-left: solid 1px #adb5bd;
   border-right: solid 1px #adb5bd; 
   border-bottom: solid 1px #adb5bd;
+  overflow-x: hidden;
 }
 .page-arendator-2
 {
@@ -91,6 +98,7 @@ a
   border-left: solid 1px #adb5bd;
   border-right: solid 1px #adb5bd; 
   border-bottom: solid 1px #adb5bd;
+  overflow-x: hidden;
 }
 .unic
 {
@@ -103,6 +111,7 @@ a
   border-left: solid 1px #adb5bd;
   border-right: solid 1px #adb5bd; 
   border-bottom: solid 1px #adb5bd;
+  overflow-x: hidden;
 }
 .foto-26
 {
@@ -111,11 +120,13 @@ a
   margin-left:clamp(0.1vw, 1.5vw, 0.5vw); 
   object-fit: cover; 
   margin-top:clamp(0.1vw, 1.5vw, 0.5vw);
+  overflow-x: hidden;
 }
 .block
 {   
     display: flex;
     width: 100%;
+    overflow-x: hidden;
     
 }
 .half1
@@ -207,6 +218,7 @@ a
   width: 95%; 
   height: 30vw; 
   transform: translate(5%);
+  overflow-x: hidden;
 }
 
 .foto
@@ -220,6 +232,7 @@ a
   width: 90%;
   height: auto;
   margin: 20px auto 0px; 
+  overflow-x: hidden;
 }
 
 .innerimg {
@@ -229,12 +242,14 @@ a
   transform: translate(-50%, -47%); 
   width:clamp(46%,11vh,45%);
   max-width: 50%; 
+  overflow-x: hidden;
 }
 
 .myimage {
   border-left: 1px solid transparent;
    border-right: 1px solid transparent;
   border-image: linear-gradient(to bottom,transparent 95%, #adb5bd 5%) 1;
+  overflow-x: hidden;
   
 }
 .foto-3
@@ -316,6 +331,7 @@ a
   border-left: solid 1px #adb5bd;
   border-right: solid 1px #adb5bd; 
   border-bottom: solid 1px #adb5bd;
+  overflow-x: hidden;
 }
 .foto-26
 {
@@ -336,6 +352,7 @@ a
   width: 12%; 
   margin-left: clamp(1vw, 2.5vw, 3vw);
   height: 6vw;
+  overflow-x: hidden;
 }
 .aa
 {
@@ -360,9 +377,32 @@ a
 {
   transform: translate(-1.5%, -60%);
 }
-
+.gradient
+{
+  height: 50vw; 
+  width:100vw;
+  overflow-x: hidden;
+}
+.img-36
+{
+  height: 50vw; 
+  width:100vw;
+  transform: translate(-5%, -60%);
+  overflow-x: hidden;
+}
 
 @media (max-width: 460px) {
+  .img-36
+{
+  height: 50vw; 
+  width:101vw;
+  transform: translate(-2.5%, -60%);
+}
+  .gradient
+{
+  height: 53vw; 
+  width:101.2vw;
+}
   .foto-3
 {
   width: 95%;
@@ -419,6 +459,10 @@ a
 .vvtext
 {
   font-size: 1.8vw;
+}
+.htext
+{
+  font-size: 4vw;
 }
 .tablet
 {
@@ -668,44 +712,647 @@ a
 }
 
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .img-36
+{
+  height: 50vw; 
+  width:105vw;
+  transform: translate(-1%, -60%);
+}
+  .gradient
+{
+  height: 53vw; 
+  width:105vw;
+}
+  .foto-3
+{
+  width: 95%;
+  height:67.8vw;
+  margin-left:clamp(0.1vw, 1.5vw, 0.5vw);
+  object-fit: cover;
+}
+  .bbtext
+{
+ font-size: 16vw;
+ line-height: 0.7;
+}
+.bmtext
+{
+  font-size: clamp(3vw, 1.5vw, 5vw);
+}
+.btext
+{
+   font-size: 3vw;
 
-
-/* @media (max-width: 375px) {
+}
+.mtext
+{
+    font-size: 2.3vw;
+}
+.foto-1
+{
   
-  .btext {
-    font-size: clamp(0.2rem, 3vw, 0.55rem);
-  }
-  .mtext{
-    font-size: clamp(0.2rem, 3vw, 0.4rem);
-  }
-  .otstup
-  {
-    margin-top: 40px;
-  }
+  width: 120vw;
+  height: 70vw;
+}
+.iphone1
+{
+   transform: translate(10%, 0%);
+   width: 80%; 
+   height: 50vw; 
+}
+.llltext
+{
+  font-size: 1.5vw;
+}
+.lltext
+{
+    font-size: 2vw;
+}
+.ltext
+{
+    font-size: 2.5vw;
+}
+.vtext
+{
+    font-size:2.3vw;
+}
+.vvtext
+{
+  font-size: 1.8vw;
+}
+.tablet
+{
+  height: 80vw;
+}
+.height51
+{
+  height: 94.1vw;
+}
+.page-arendator
+{
+  background-color: black;
+  width: 95.2%;
+  border-left: solid 1px #adb5bd;
+  border-right: solid 1px #adb5bd; 
+  border-bottom: solid 1px #adb5bd;
+}
+.imgcontainer-1 {
+  position: relative;
+  display: inline-block;
+  width: 200%;
+  height: auto;
+  margin: 20px auto 0px; 
+  transform: translate(-25%,-17%);
 }
 
-@media (max-width: 390px) {
-  .btext {
-    font-size: clamp(10px 3vw, 20px);
-  }
-  .otstup
-  {
-    margin-top: 40px;
-  }
-} */
-/* @media (max-width: 727px){
-  .otstup{
-    margin-top: 80px;
-  }
-} */
 
+.innerimg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -44%); 
+  width:47.5%;
+  max-width: 50%; 
+}
 
-/* раздел status park */
+.myimage {
+  border-left: 1px solid transparent;
+   border-right: 1px solid transparent;
+  border-image: linear-gradient(to bottom,transparent 95%, #adb5bd 5%) 1;
+  
+}
+.htext
+{
+  font-size: 4vw;
+}
+.rounded-rectangle
+{
+  width: 27vw;
+  border:solid 1px  white;
+  height: 6.5vw;
 
+}
+.quorte
+{
+  
+  border: solid 1px white;
+  width: 16.5vw;
+  height: 16.5vw;
+}
+.quorte-2
+{
+  margin: 2px;
+  border: solid 1px white;
+  width: 14.5vw;
+  height: 14.5vw;
+}
+.t{
+  font-size: 3vw;
+  line-height: 2.9vw;
+}
+.foto-13
+{
+  width: 95%; 
+  height: 50.5vw; 
+  transform: translate(5%);
+}
+.iphone2{
+  width: 80%; 
+  height: 70vw;
+}
+.iphone3
+{
+  width: 80%; 
+  height: 70vw;
+}
+.iphone4
+{
+  width: 80%; 
+  height: 70vw;
+}
+.d-flex-iphone
+{
+  display: flex;
+  justify-content:none;
+  flex-direction: column;
+}
+.d-container-iphone-2
+{
+  display: flex;
+  width: 50%;
+  margin-left:50vw;
+}
+.d-container-iphone-3
+{
+  display: flex;
+  width: 50%;
+  margin-left:5vw;
+}
+.d-container-iphone-4
+{
+  display: flex;
+  width: 50%;
+  margin-left:50vw;
+}
+.page-arendator-2
+{
+  background-color: black;
+  width: 95%;
+  border-left: solid 1px #adb5bd;
+  border-right: solid 1px #adb5bd; 
+  border-bottom: solid 1px #adb5bd;
+}
+.foto-15
+{
+  width: 95%; 
+  height:53.7vw;
+  margin-left:clamp(0.1vw, 1.5vw, 0.5vw); 
+  object-fit: cover; margin-top:clamp(0.1vw, 1.5vw, 0.5vw);
+}
+.tt
+{
+  font-size: 4vw;
+}
+.viem
+{
+  width: 70%;
+  background: white;
+  height: 7vw;
 
-
+}
+.page-arendator-3
+{
+  background-color: black;
+  width: 95%;
+  border-left: solid 1px #adb5bd;
+  border-right: solid 1px #adb5bd; 
+  border-bottom: solid 1px #adb5bd;
+}
+.foto-26
+{
+  width: 95%; 
+  height:62.7vw;
+  margin-left:clamp(0.1vw, 1.5vw, 0.5vw); 
+  object-fit: cover; 
+  margin-top:clamp(0.1vw, 1.5vw, 0.5vw);
+}
+.l-line{
+  line-height: 3vw;
+}
+.ll-line{
+  line-height: 4vw;
+}
+.page-arendator-3
+{
+  background-color: black;
+  width: 95%;
+  border-left: solid 1px #adb5bd;
+  border-right: solid 1px #adb5bd; 
+  border-bottom: solid 1px #adb5bd;
+}
  
+ .page-arendator-4
+{
+  height: 60vw;
+  background-color: black;
+  width: 95%;
+  border-left: solid 1px #adb5bd;
+  border-right: solid 1px #adb5bd; 
+  border-bottom: solid 1px #adb5bd;
+}
+.foto-30{
+  width: 95%; 
+  height:34.7vw;
+  margin-left:clamp(0.1vw, 1.5vw, 0.5vw); 
+  object-fit: cover; 
+  margin-top:clamp(0.1vw, 1.5vw, 0.5vw);
+}
+.page-arendator-5
+{
+  height: 80vw;
+  background-color: black;
+  width: 95%;
+  border-left: solid 1px #adb5bd;
+  border-right: solid 1px #adb5bd; 
+  border-bottom: solid 1px #adb5bd;
+}
+.rounded-rectangle-1
+{
+  width: 24vw;
+  border:solid 1px  white;
+  height: 5vw;
+}
+.foto-31
+{
+  height: 50vw;
+}
+.foto-26
+{
+  width: 95%; 
+  height:63.4vw;
+  margin-left:clamp(0.1vw, 1.5vw, 0.5vw); 
+  object-fit: cover; 
+  margin-top:clamp(0.1vw, 1.5vw, 0.5vw);
+}
+.foto-32
+{
+  width: 40vw; 
+  height: 30vw;
+}
+.otstup-1-1-1
+{
+  margin-top: 5vw;
+}
+.mll
+{
+  margin-left:5.5vw;
+}
+.foto-33{
+  width: 20vw;
+  height: 20vw;
+}
+.d-flexxx
+{
+  display: flex;
+  width: 23vw; 
+  height: 20vw;
+}
+.aa
+{
+  width: 6vw; 
+  height: 6vw;
+}
+.aaa{
+  width: 5.7vw; 
+  margin-left: clamp(1vw, 2.5vw, 3vw);
+  height: 6vw;
+}
+.tr{
+  transform: translate(-2.7%, -60%);
+}
+}
 
+@media (max-width: 375px) {
+  .img-36
+{
+  height: 50vw; 
+  width:105vw;
+  transform: translate(-1%, -60%);
+}
+  .gradient
+{
+  height: 53vw; 
+  width:105vw;
+}
+  .foto-3
+{
+  width: 95%;
+  height:67.8vw;
+  margin-left:clamp(0.1vw, 1.5vw, 0.5vw);
+  object-fit: cover;
+}
+  .bbtext
+{
+ font-size: 16vw;
+ line-height: 0.7;
+}
+.bmtext
+{
+  font-size: clamp(3vw, 1.5vw, 5vw);
+}
+.btext
+{
+   font-size: 3vw;
+
+}
+.mtext
+{
+    font-size: 2.3vw;
+}
+.foto-1
+{
+  
+  width: 120vw;
+  height: 70vw;
+}
+.iphone1
+{
+   transform: translate(10%, 0%);
+   width: 80%; 
+   height: 50vw; 
+}
+.llltext
+{
+  font-size: 1.5vw;
+}
+.lltext
+{
+    font-size: 2vw;
+}
+.ltext
+{
+    font-size: 2.5vw;
+}
+.vtext
+{
+    font-size:2.3vw;
+}
+.vvtext
+{
+  font-size: 1.8vw;
+}
+.tablet
+{
+  height: 80vw;
+}
+.height51
+{
+  height: 94.1vw;
+}
+.page-arendator
+{
+  background-color: black;
+  width: 95.2%;
+  border-left: solid 1px #adb5bd;
+  border-right: solid 1px #adb5bd; 
+  border-bottom: solid 1px #adb5bd;
+}
+.imgcontainer-1 {
+  position: relative;
+  display: inline-block;
+  width: 200%;
+  height: auto;
+  margin: 20px auto 0px; 
+  transform: translate(-25%,-17%);
+}
+
+
+.innerimg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -44%); 
+  width:47.5%;
+  max-width: 50%; 
+}
+
+.myimage {
+  border-left: 1px solid transparent;
+   border-right: 1px solid transparent;
+  border-image: linear-gradient(to bottom,transparent 95%, #adb5bd 5%) 1;
+  
+}
+.htext
+{
+  font-size: 4vw;
+}
+.rounded-rectangle
+{
+  width: 27vw;
+  border:solid 1px  white;
+  height: 6.5vw;
+
+}
+.quorte
+{
+  
+  border: solid 1px white;
+  width: 16.5vw;
+  height: 16.5vw;
+}
+.quorte-2
+{
+  margin: 2px;
+  border: solid 1px white;
+  width: 14.5vw;
+  height: 14.5vw;
+}
+.t{
+  font-size: 3vw;
+  line-height: 2.9vw;
+}
+.foto-13
+{
+  width: 95%; 
+  height: 50.5vw; 
+  transform: translate(5%);
+}
+.iphone2{
+  width: 80%; 
+  height: 70vw;
+}
+.iphone3
+{
+  width: 80%; 
+  height: 70vw;
+}
+.iphone4
+{
+  width: 80%; 
+  height: 70vw;
+}
+.d-flex-iphone
+{
+  display: flex;
+  justify-content:none;
+  flex-direction: column;
+}
+.d-container-iphone-2
+{
+  display: flex;
+  width: 50%;
+  margin-left:50vw;
+}
+.d-container-iphone-3
+{
+  display: flex;
+  width: 50%;
+  margin-left:5vw;
+}
+.d-container-iphone-4
+{
+  display: flex;
+  width: 50%;
+  margin-left:50vw;
+}
+.page-arendator-2
+{
+  background-color: black;
+  width: 95%;
+  border-left: solid 1px #adb5bd;
+  border-right: solid 1px #adb5bd; 
+  border-bottom: solid 1px #adb5bd;
+}
+.foto-15
+{
+  width: 95%; 
+  height:53.7vw;
+  margin-left:clamp(0.1vw, 1.5vw, 0.5vw); 
+  object-fit: cover; margin-top:clamp(0.1vw, 1.5vw, 0.5vw);
+}
+.tt
+{
+  font-size: 4vw;
+}
+.viem
+{
+  width: 70%;
+  background: white;
+  height: 7vw;
+
+}
+.page-arendator-3
+{
+  background-color: black;
+  width: 95%;
+  border-left: solid 1px #adb5bd;
+  border-right: solid 1px #adb5bd; 
+  border-bottom: solid 1px #adb5bd;
+}
+.foto-26
+{
+  width: 95%; 
+  height:75.7vw;
+  margin-left:clamp(0.1vw, 1.5vw, 0.5vw); 
+  object-fit: cover; 
+  margin-top:clamp(0.1vw, 1.5vw, 0.5vw);
+}
+.l-line{
+  line-height: 3vw;
+}
+.ll-line{
+  line-height: 4vw;
+}
+.page-arendator-3
+{
+  background-color: black;
+  width: 95%;
+  border-left: solid 1px #adb5bd;
+  border-right: solid 1px #adb5bd; 
+  border-bottom: solid 1px #adb5bd;
+}
+ 
+ .page-arendator-4
+{
+  height: 60vw;
+  background-color: black;
+  width: 95%;
+  border-left: solid 1px #adb5bd;
+  border-right: solid 1px #adb5bd; 
+  border-bottom: solid 1px #adb5bd;
+}
+.foto-30{
+  width: 95%; 
+  height:34.7vw;
+  margin-left:clamp(0.1vw, 1.5vw, 0.5vw); 
+  object-fit: cover; 
+  margin-top:clamp(0.1vw, 1.5vw, 0.5vw);
+}
+.page-arendator-5
+{
+  height: 80vw;
+  background-color: black;
+  width: 95%;
+  border-left: solid 1px #adb5bd;
+  border-right: solid 1px #adb5bd; 
+  border-bottom: solid 1px #adb5bd;
+}
+.rounded-rectangle-1
+{
+  width: 24vw;
+  border:solid 1px  white;
+  height: 5vw;
+}
+.foto-31
+{
+  height: 50vw;
+}
+.foto-26
+{
+  width: 95%; 
+  height:63.4vw;
+  margin-left:clamp(0.1vw, 1.5vw, 0.5vw); 
+  object-fit: cover; 
+  margin-top:clamp(0.1vw, 1.5vw, 0.5vw);
+}
+.foto-32
+{
+  width: 40vw; 
+  height: 30vw;
+}
+.otstup-1-1-1
+{
+  margin-top: 5vw;
+}
+.mll
+{
+  margin-left:5.5vw;
+}
+.foto-33{
+  width: 20vw;
+  height: 20vw;
+}
+.d-flexxx
+{
+  display: flex;
+  width: 23vw; 
+  height: 20vw;
+}
+.aa
+{
+  width: 6vw; 
+  height: 6vw;
+}
+.aaa{
+  width: 5.7vw; 
+  margin-left: clamp(1vw, 2.5vw, 3vw);
+  height: 6vw;
+}
+.tr{
+  transform: translate(-2.7%, -60%);
+}
+}
 
 
 
